@@ -64,11 +64,16 @@ window.addEventListener("DOMNodeInserted",
 		}
 
         var tweet = streamItem.getElementsByClassName("tweet",streamItem)[0];
+		if (tweet.innerHTML.match(new RegExp('sxsw', 'i'))) {
+			streamItem.style.display = 'none';
+			return;
+		}
         var name = tweet.getAttribute("data-screen-name");
         if (name.toLowerCase() == 'Mr_Calloway'.toLowerCase()) 
         {
             var icon = tweet.getElementsByTagName("img")[0];
             icon.style.display='none';
         }
+
     }, 
     false);
