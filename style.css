@@ -13,3 +13,8 @@
 [data-screen-name="PT_Calloway"] .tweet-image {
 	background-color: black;
 }
+
+/* block icon in the "details pane" (right column)*/
+img[data-user-id="115111108"] {
+	visibility: hidden;
+}
