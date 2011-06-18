@@ -1,0 +1,15 @@
+/* block profile icon on main page */
+.user-style-PT_Calloway .profile-image-container {
+	background-color: black;
+}
+.user-style-PT_Calloway .profile-image-container img {
+	visibility: hidden;
+}
+
+/* block icon on any timeline*/
+[data-screen-name="PT_Calloway"] .tweet-image img {
+	visibility: hidden;
+}
+[data-screen-name="PT_Calloway"] .tweet-image {
+	background-color: black;
+}

@@ -11,23 +11,18 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>Chrome</key>
 	<dict/>
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
-		<dict>
-			<key>End</key>
-			<array>
-				<string>calloway.js</string>
-			</array>
-		</dict>
-		<key>Whitelist</key>
+		<dict/>
+		<key>Stylesheets</key>
 		<array>
-			<string>http*://*.twitter.com/*</string>
+			<string>style.css</string>
 		</array>
 	</dict>
 	<key>Description</key>
@@ -38,8 +33,15 @@
 	<dict>
 		<key>Website Access</key>
 		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.twitter.com</string>
+				<string>twitter.com</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
 			<key>Level</key>
-			<string>All</string>
+			<string>Some</string>
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
